@@ -1,3 +1,5 @@
+"use client"
+
 import { useStore } from '../store';
 import Task from './Task';
 import './Column.css';

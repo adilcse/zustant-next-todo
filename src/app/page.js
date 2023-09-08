@@ -1,4 +1,9 @@
-import Column from '@/components/Column'
+"use client"
+import dynamic from 'next/dynamic'
+ 
+const Column = dynamic(() => import('../components/Column'), { ssr: false })
+
+// import Column from '@/components/Column'
 import Image from 'next/image'
 
 export default function Home() {
